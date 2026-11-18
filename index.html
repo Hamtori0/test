@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>원희의 두근두근 베이킹</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="game-container">
+        <!-- 🌐 우측 상단 고정 언어 전환 버튼 -->
+        <button id="lang-btn" class="corner-lang-btn">
+            <span id="lang-btn-text">English / KR</span>
+        </button>
+
+        <!-- [1] 타이틀 화면 -->
+        <div id="title-screen" class="screen">
+            <img id="title-logo" src="title-logo.png" alt="원희의 두근두근 베이킹">
+            <!-- 1. 게임시작 이미지 + 글씨 버튼 -->
+            <button id="start-btn" class="img-btn">
+                <img src="btn-start.png" alt="게임 시작">
+                <span class="btn-label" data-kr="게임 시작" data-en="Start">게임 시작</span>
+            </button>
+        </div>
+
+        <!-- [2] 실제 게임 플레이 화면 -->
+        <div id="play-screen" class="screen hidden">
+            <!-- 배경 이미지 전용 레이어 (블러 효과 분리 적용용) -->
+            <div id="play-bg"></div>
+
+            <!-- 하단 대화창 UI -->
+            <div id="dialogue-box">
+                <div id="speaker-name"></div>
+                <div id="dialogue-text"></div>
+            </div>
+
+            <!-- 3. 예 / 아니요 선택지 박스 (이미지 + 글씨) -->
+            <div id="choice-box" class="hidden">
+                <button class="choice-btn img-btn" data-choice="yes">
+                    <img src="btn-yes.png" alt="예">
+                    <span class="btn-label" data-kr="예" data-en="Yes">예</span>
+                </button>
+                <button class="choice-btn img-btn" data-choice="no">
+                    <img src="btn-no.png" alt="아니요">
+                    <span class="btn-label" data-kr="아니요" data-en="No">아니요</span>
+                </button>
+            </div>
+
+            <!-- 5가지 재료 선택 스테이지 -->
+            <div id="ingredient-stage" class="hidden">
+                <div class="stage-title-box">
+                    <span class="stage-title-text" data-kr="사용할 재료를 골라주세요!" data-en="Let’s Pick Our Ingredients!">사용할 재료를 골라주세요!</span>
+                </div>
+                
+                <div class="ingredient-list">
+                    <button class="ing-img-btn" data-ing="butter">
+                        <img src="btn-butter.png" alt="버터">
+                        <span class="ing-label" data-kr="버터" data-en="Butter">버터</span>
+                    </button>
+                    <button class="ing-img-btn" data-ing="flour">
+                        <img src="btn-flour.png" alt="밀가루">
+                        <span class="ing-label" data-kr="밀가루" data-en="Flour">밀가루</span>
+                    </button>
+                    <button class="ing-img-btn" data-ing="sugar">
+                        <img src="btn-sugar.png" alt="설탕">
+                        <span class="ing-label" data-kr="설탕" data-en="Sugar">설탕</span>
+                    </button>
+                    <button class="ing-img-btn" data-ing="egg">
+                        <img src="btn-egg.png" alt="달걀">
+                        <span class="ing-label" data-kr="달걀" data-en="Egg">달걀</span>
+                    </button>
+                    <button class="ing-img-btn" data-ing="salt">
+                        <img src="btn-salt.png" alt="소금">
+                        <span class="ing-label" data-kr="소금" data-en="Salt">소금</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 5. 처음으로 돌아가기 버튼 (이미지 + 글씨) -->
+            <button id="restart-btn" class="hidden img-btn">
+                <img src="btn-restart.png" alt="처음으로 돌아가기">
+                <span class="btn-label small-label" data-kr="처음으로 돌아가기" data-en="Restart">처음으로 돌아가기</span>
+            </button>
+
+            <!-- 6. 이전으로 돌아가기 버튼 (이미지 + 글씨) -->
+            <button id="back-btn" class="hidden img-btn">
+                <img src="btn-back.png" alt="이전으로 돌아가기">
+                <span class="btn-label small-label" data-kr="이전으로 돌아가기" data-en="Back">이전으로 돌아가기</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- 🎵 배경음악 오디오 태그 -->
+    <audio id="bgm" src="bgm.mp3" loop></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
