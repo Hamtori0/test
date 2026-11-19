@@ -343,7 +343,6 @@ body {
     left: 60%;
 }
 
-
 /* =========================================
    📱 [모바일] 850px 이하 화면 전용 세팅
    ========================================= */
@@ -439,11 +438,13 @@ body {
         top: 49%;
         left: 10%;
     }
+
     #game-container.lang-en #speaker-name {
         font-size: 11px;
         top: 27%;
         left: 15%;
     }
+
     #game-container.lang-en .ing-label {
         font-size: 9.5px;
         top: 50%;
