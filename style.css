@@ -343,6 +343,7 @@ body {
     left: 60%;
 }
 
+
 /* =========================================
    📱 [모바일] 850px 이하 화면 전용 세팅
    ========================================= */
@@ -432,20 +433,17 @@ body {
         width: 120px;
     }
 
-    /* 🌐 [모바일 + 영어 모드 전용] */
+    /* 🌐 [영어 모드 전용] 모바일에서 영어일 때만 적용되는 미세조정 */
     #game-container.lang-en #dialogue-text {
         font-size: 9.5px; 
         top: 49%;
         left: 10%;
-        line-height: 1.35;
     }
-
     #game-container.lang-en #speaker-name {
         font-size: 11px;
-        top: 25%;
-        left: 16.5%;
+        top: 22%;
+        left: 18%;
     }
-
     #game-container.lang-en .ing-label {
         font-size: 9.5px;
         top: 50%;
@@ -454,7 +452,7 @@ body {
 }
 
 /* =========================================
-   📌 모바일 터치 하이라이트 및 흰색 깜빡임 완전 제거
+   📱 모바일 터치 하이라이트 및 흰색 깜빡임 완전 제거
    ========================================= */
 * {
     -webkit-tap-highlight-color: transparent;
