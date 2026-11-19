@@ -333,8 +333,8 @@ body {
 
 #game-container.lang-en #speaker-name {
     font-size: 20px;
-    top: 24%;
-    left: 18%;
+    top: 25%;
+    left: 16.5%;
 }
 
 #game-container.lang-en .ing-label {
@@ -441,8 +441,8 @@ body {
     }
     #game-container.lang-en #speaker-name {
         font-size: 11px;
-        top: 24%;
-        left: 17%;
+        top: 27%;
+        left: 15%;
     }
     #game-container.lang-en .ing-label {
         font-size: 9.5px;
