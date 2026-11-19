@@ -333,8 +333,8 @@ body {
 
 #game-container.lang-en #speaker-name {
     font-size: 20px;
-    top: 25%;
-    left: 16.5%;
+    top: 24%;
+    left: 18%;
 }
 
 #game-container.lang-en .ing-label {
@@ -342,6 +342,7 @@ body {
     top: 50%;
     left: 60%;
 }
+
 
 /* =========================================
    📱 [모바일] 850px 이하 화면 전용 세팅
@@ -435,16 +436,14 @@ body {
     /* 🌐 [영어 모드 전용] 모바일에서 영어일 때만 적용되는 미세조정 */
     #game-container.lang-en #dialogue-text {
         font-size: 9.5px; 
-        top: 29%;
+        top: 49%;
         left: 10%;
     }
-
     #game-container.lang-en #speaker-name {
         font-size: 11px;
-        top: 38%;
-        left: 15%;
+        top: 22%;
+        left: 14%;
     }
-
     #game-container.lang-en .ing-label {
         font-size: 9.5px;
         top: 50%;
