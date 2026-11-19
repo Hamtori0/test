@@ -435,7 +435,7 @@ body {
     /* 🌐 [영어 모드 전용] 모바일에서 영어일 때만 적용되는 미세조정 */
     #game-container.lang-en #dialogue-text {
         font-size: 9.5px; 
-        top: 60%;
+        top: 29%;
         left: 10%;
     }
 
